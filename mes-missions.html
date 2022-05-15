@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Site chef d'oeuvre</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="UE 232">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Medical HTML Template v1.0">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="plugins/animation/animate.min.css">
+  <!-- jquery-ui -->
+  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
+  <!-- timePicker -->
+  <link rel="stylesheet" href="plugins/timePicker/timePicker.css">
+
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+  <div class="page-wrapper">
+
+    <!--Main Header-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLinks">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rapport-lancement.html">Rapport de lancement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rapport-final.html">Rapport final</a>
+            </li>
+
+            <li class="nav-item dropdown @@blogs">
+              <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Articles</a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="detail-missions.html">Détail des missions (Rapport de lancement)</a>
+                </li>
+                <li><a class="dropdown-item" href="mes-missions.html">Mes missions (Rapport final)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End Main Header -->
+
+    <!--Start Main Image section-->
+    <div class="hero-slider">
+      <div class="slider-item slide1" style="background-image:url(images/slider/checklist2.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="content style text-center">
+                <h2 class="text-white text-bold">Mes missions</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Main Image Section-->
+
+    <!-- Contact Section -->
+    <section class="blog-section bg-gray style-four section">
+      <div class="container background-white">
+        <div class="row">
+          <div class="item-holder">
+            <div class="section-title text-center">
+              <h3 class="mb-5">Gestions des tickets/Résolution de divers problèmes du site existant</h3>
+            </div>
+            <div>
+              <p>Cette partie traitera des divers problèmes rencontrés sur la gestion du formulaire d’inscription et de
+                connexion. Voici un aperçu des formulaires actuellement (après refonte graphique) :</p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p class="text-center">Le formulaire de connexion</p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p class="text-center">Le formulaire d'inscription</p>
+
+              <p>Au cours de mon stage, l’entreprise a créé un nouveau dépôt git afin de ne plus avoir de dépendances
+                avec un ancien développeur. Pour les différentes tâches réalisées que je vais aborder tout au long de ce
+                rapport, je parlerai donc d’un dépôt obsolète et je vous expliquerai les différents changements
+                qu’apporte la création de ce nouveau dépôt.
+                <br>Comme nous l’avons vu plus tôt en exemple pour l’explication de la gestion des tickets, le
+                formulaire comportait 3 erreurs principales.
+              </p>
+
+              <div class="section-title text-center">
+                <h4 class="mb-5">Erreur de pop-up lorsque le mot de passe et le mot de passe de confirmation sont
+                  différents</h4>
+              </div>
+
+              <p>Le premier problème auquel je devais faire face est un problème de pop-up. Voici son ticket :</p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>Comme l’indique son ticket, lors de l’inscription, si les deux mots de passes entrés étaient
+                différents, une page de chargement ainsi que deux pop-up apparaissaient :</p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>J’ai résolu ce problème en sortant d’une condition une fonction permettant de comparer les deux mots de
+                passes enregistrés par l’utilisateur. Les morceaux de codes en vert sont les changements effectués et
+                les morceaux de codes en rouge correspondent au code avant les modifications :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>Après changement, lorsque les deux mots de passes entrés sont différents, voici ce qui apparait :</p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Nous voyons que grâce aux modifications, plus aucune page de chargement n’apparait et la pop-up verte
+                indiquant que le compte a bien été créé a disparu.
+              </p>
+
+              <div class="section-title text-center">
+                <h4 class="mb-5">Vérification de la conformité d’une adresse mail </h4>
+              </div>
+
+              <p>
+                Voici le ticket du second problème :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Comme indiqué dans le ticket, la conformité des adresses mail n’est pas vérifiée lorsqu’un formulaire
+                est rempli. Dans le cas de notre ticket ce problème a été relevé pour le formulaire de récupération de
+                mot de passe mais c’est aussi le cas pour les formulaires d’inscription et de connexion. Voici à quoi
+                ressemble le formulaire de récupération de mot de passe (après refonte graphique) :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Avant mon intervention, il était possible d’envoyer un mail de récupération en entrant une adresse mail
+                non conforme, c’est-à-dire une adresse mail ne ressemblant pas à exemple@gmail.com. Ainsi, on pouvait
+                entrer comme mail exemple@gmail, exemple ou encore ne rien renseigner du tout. Voici un exemple d’envoi
+                de mail de récupération à un mail invalide :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Afin de résoudre ce problème, j’ai créé une fonction permettant de tester la conformité d’une adresse
+                mail grâce à une formule spéciale :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                J’ai ensuite trouvé une formule plus courte et plus simple à la compréhension pour la vérification de
+                l’adresse mail :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Maintenant, lorsque l’adresse mail entrée n’est pas conforme, le message d’erreur suivant apparait :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>Grâce à cette nouvelle fonction, la conformité de l’adresse mail est bel et bien vérifiée.</p>
+
+              <div class="section-title text-center">
+                <h4 class="mb-5">La disparition des formulaires</h4>
+              </div>
+
+              <p>
+                Voici le ticket résumant le problème de la disparition des formulaires :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Lorsqu’aucun des champs n’étaient validés, les formulaires disparaissaient, ne laissant apparaître que
+                le background :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                J’ai donc créé une fonction permettant de vérifier si un formulaire est bel et bien rempli :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Après modification, voilà ce que nous obtenons en validant un formulaire vide :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="section-title text-center">
+              <h3 class="mb-5">Optimisation du référencement (SEO)</h3>
+            </div>
+            <div>
+              <p class="mb-5">
+                Lors de mon stage, j’ai également été chargée d’optimiser le référencement du site internet. Pour ce
+                faire, j’ai utilisé une extension Google qu’un des alternants de l’entreprise m’avait conseillée :
+                Lighthouse SEO. Cette extension permet de répertorier tous les problèmes impactant le référencement,
+                l’accessibilité mais aussi les performances. Voici à quoi ressemble un diagnostic de l’extension sur la
+                page d’accueil :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                L’extension permet également de voir les performances du site au moment du diagnostic et propose
+                également des solutions pour améliorer le score du site internet en fonction des catégories :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Pour améliorer le référencement, j’ai donc appliqué les recommandations de l’extension, et plus
+                particulièrement au niveau des formulaires. En effet, ces derniers étaient dénués de labels. Pour des
+                raisons d’accessibilité, j’ai dû les ajouter dans les différents composants des formulaires du site
+                internet. Tout d’abord, je vais vous expliquer grâce à des extraits de code comment fonctionne un
+                composant et comment lui transmettre des variables afin d’en changer le comportement.
+
+                <br>Prenons pour exemple le formulaire de connexion. Ce dernier est composé de trois composants : deux «
+                FieldInput » servant à entrer du texte brut et un bouton de validation. Nous nous intéresserons donc aux
+                composants « FieldInput » auxquels nous devons transmettre un label. Le composant « FieldInput » est
+                constitué d’une balise « div » entourant une balise « input ». Les caractéristiques utilisés dans la
+                balise « div » sont des classes CSS prédéfinies. La balise div contient donc le visuel de l’input. La
+                balise « input » quant à elle contient le comportement de l’input au sein d’une page (événements, taille
+                maximum, type…).
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Ce composant contient toutes les possibilités de style et de comportement utilisé sur le site internet.
+                Lorsque ce composant doit apparaitre sur une des pages du site, il faut qu’on l’importe dans la partie
+                script comme ceci :
+              </p>
+
+              <div class="image-box">
+                <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+              </div>
+
+              <p>
+                Nous avons importé deux composants pour créer notre formulaire de connexion. Nous voyons donc que parmi
+                les caractéristiques du composant, le label a été ajouté. J’ai donc effectué cette opération sur tous
+                les composants utilisés pour les formulaires.
+              </p>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="section-title text-center">
+              <h3 class="mb-5">Intégration de la maquette du site internet</h3>
+            </div>
+
+            <p>
+              Ma dernière mission a été l’intégration de la maquette sur le site internet. Je devais intégrer l’onglet «
+              Mes informations » qui est la fusion des deux anciens onglets « Informations publiques » et « Informations
+              privées ». Voici la maquette de la page à réaliser créée sur le logiciel Figma par le webdesigner de
+              l’entreprise :
+            </p>
+
+            <div class="image-box">
+              <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+            </div>
+
+            <p>
+              Le header et le menu à gauche étant des composants à part, je devais m’occuper seulement du contenu de la
+              page. Après une semaine de travail, je n’ai pas eu le temps d’intégrer complètement la page, certains
+              composants étant beaucoup trop important en termes de travail pour que je puisse terminer. Cette page est
+              donc toujours en travaux à l’heure actuelle et sera terminée plus tard par les développeurs de
+              l’entreprise. Voici à quoi ressemble la page avant les modifications :
+            </p>
+
+            <div class="image-box">
+              <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+            </div>
+
+            <p>
+              Tout comme l’ajout des labels dans la mission précédente, cette refonte graphique se fait principalement
+              par la modification des composants. Mais contrairement à l’amélioration de l’accessibilité avec l’ajout
+              des labels dans les comportements du composant, j’ai uniquement modifié le visuel de ces derniers, en ne
+              travaillant que sur le CSS. A cette fin, Mr BOISHUS (le webdesigner) a créé sur Figma une page regroupant
+              tous les nouveaux visuels des composants ainsi que les éventuels événements liés à ces derniers. Je
+              pouvais donc retrouver les propriétés CSS en prenant pour exemple cette fiche :
+            </p>
+
+            <div class="image-box">
+              <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+            </div>
+
+            <p>
+              Voici donc à quoi ressemble la page concernée après modifications :
+            </p>
+
+            <div class="image-box mb-5">
+              <img loading="lazy" class="img-fluid" src="images/missions/tickets.png" alt="liste de tickets">
+            </div>
+
+            <div class="link-btn">
+              <a href="rapport-final.html" class="btn-style-one">Retour au rapport final</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!--footer-main-->
+    <footer class="footer-main">
+
+      <div class="footer-bottom">
+        <div class="container clearfix">
+          <div class="copyright-text">
+            <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>
+            </p>
+          </div>
+          <ul class="footer-bottom-link list-inline social-icons">
+            <li class="list-inline-item"><a href="https://facebook.com/themefisher" aria-label="facebook"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/themefisher" aria-label="twitter"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/themefisher" aria-label="instagram"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/themefisher" aria-label="github"><i
+                  class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--End footer-main-->
+
+    <!-- scroll-to-top -->
+    <div id="back-to-top" class="back-to-top">
+      <i class="fa fa-angle-up"></i>
+    </div>
+
+  </div>
+  <!--End pagewrapper-->
+
+
+  <!--Scroll to top-->
+  <div class="scroll-to-top scroll-to-target" data-target=".header-top">
+    <span class="icon fa fa-angle-up"></span>
+  </div>
+
+
+  <!-- jquery -->
+  <script src="plugins/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <!-- FancyBox -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js" defer></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+  <script src="plugins/google-map/gmap.js" defer></script>
+
+  <!-- jquery-ui -->
+  <script src="plugins/jquery-ui/jquery-ui.js" defer></script>
+  <!-- timePicker -->
+  <script src="plugins/timePicker/timePicker.js" defer></script>
+
+  <!-- script js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
