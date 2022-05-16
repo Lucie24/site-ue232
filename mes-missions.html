@@ -104,22 +104,22 @@
               <h3 class="mb-5">Gestions des tickets/Résolution de divers problèmes du site existant</h3>
             </div>
             <div>
-              <p>Cette partie traitera des divers problèmes rencontrés sur la gestion du formulaire d’inscription et de
+              <p class="mb-5">Cette partie traitera des divers problèmes rencontrés sur la gestion du formulaire d’inscription et de
                 connexion. Voici un aperçu des formulaires actuellement (après refonte graphique) :</p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid" src="images/missions/img0.1.png" alt="liste de tickets">
               </div>
 
-              <p class="text-center">Le formulaire de connexion</p>
+              <p class="text-center mb-5">Le formulaire de connexion</p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid" src="images/missions/img0.2.png" alt="liste de tickets">
               </div>
 
-              <p class="text-center">Le formulaire d'inscription</p>
+              <p class="text-center mb-5">Le formulaire d'inscription</p>
 
-              <p>Au cours de mon stage, l’entreprise a créé un nouveau dépôt git afin de ne plus avoir de dépendances
+              <p class="mb-5">Au cours de mon stage, l’entreprise a créé un nouveau dépôt git afin de ne plus avoir de dépendances
                 avec un ancien développeur. Pour les différentes tâches réalisées que je vais aborder tout au long de ce
                 rapport, je parlerai donc d’un dépôt obsolète et je vous expliquerai les différents changements
                 qu’apporte la création de ce nouveau dépôt.
@@ -132,35 +132,35 @@
                   différents</h4>
               </div>
 
-              <p>Le premier problème auquel je devais faire face est un problème de pop-up. Voici son ticket :</p>
+              <p class="mb-5">Le premier problème auquel je devais faire face est un problème de pop-up. Voici son ticket :</p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img1.1.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.1.png" alt="liste de tickets">
               </div>
 
-              <p>Comme l’indique son ticket, lors de l’inscription, si les deux mots de passes entrés étaient
+              <p class="mb-5">Comme l’indique son ticket, lors de l’inscription, si les deux mots de passes entrés étaient
                 différents, une page de chargement ainsi que deux pop-up apparaissaient :</p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img1.2.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.2.png" alt="liste de tickets">
               </div>
 
-              <p>J’ai résolu ce problème en sortant d’une condition une fonction permettant de comparer les deux mots de
+              <p class="mb-5">J’ai résolu ce problème en sortant d’une condition une fonction permettant de comparer les deux mots de
                 passes enregistrés par l’utilisateur. Les morceaux de codes en vert sont les changements effectués et
                 les morceaux de codes en rouge correspondent au code avant les modifications :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img1.3.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.3.png" alt="liste de tickets">
               </div>
 
-              <p>Après changement, lorsque les deux mots de passes entrés sont différents, voici ce qui apparait :</p>
+              <p class="mb-5">Après changement, lorsque les deux mots de passes entrés sont différents, voici ce qui apparait :</p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img1.4.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.4.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Nous voyons que grâce aux modifications, plus aucune page de chargement n’apparait et la pop-up verte
                 indiquant que le compte a bien été créé a disparu.
               </p>
@@ -169,15 +169,15 @@
                 <h4 class="mb-5">Vérification de la conformité d’une adresse mail </h4>
               </div>
 
-              <p>
+              <p class="mb-5">
                 Voici le ticket du second problème :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.1.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.1.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Comme indiqué dans le ticket, la conformité des adresses mail n’est pas vérifiée lorsqu’un formulaire
                 est rempli. Dans le cas de notre ticket ce problème a été relevé pour le formulaire de récupération de
                 mot de passe mais c’est aussi le cas pour les formulaires d’inscription et de connexion. Voici à quoi
@@ -185,10 +185,10 @@
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.2.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.2.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Avant mon intervention, il était possible d’envoyer un mail de récupération en entrant une adresse mail
                 non conforme, c’est-à-dire une adresse mail ne ressemblant pas à exemple@gmail.com. Ainsi, on pouvait
                 entrer comme mail exemple@gmail, exemple ou encore ne rien renseigner du tout. Voici un exemple d’envoi
@@ -196,72 +196,72 @@
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.3.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.3.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Afin de résoudre ce problème, j’ai créé une fonction permettant de tester la conformité d’une adresse
                 mail grâce à une formule spéciale :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.4.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.4.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 J’ai ensuite trouvé une formule plus courte et plus simple à la compréhension pour la vérification de
                 l’adresse mail :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.5.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.5.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Maintenant, lorsque l’adresse mail entrée n’est pas conforme, le message d’erreur suivant apparait :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img2.6.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.6.png" alt="liste de tickets">
               </div>
 
-              <p>Grâce à cette nouvelle fonction, la conformité de l’adresse mail est bel et bien vérifiée.</p>
+              <p class="mb-5">Grâce à cette nouvelle fonction, la conformité de l’adresse mail est bel et bien vérifiée.</p>
 
               <div class="section-title text-center">
                 <h4 class="mb-5">La disparition des formulaires</h4>
               </div>
 
-              <p>
+              <p class="mb-5">
                 Voici le ticket résumant le problème de la disparition des formulaires :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img3.1.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img3.1.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Lorsqu’aucun des champs n’étaient validés, les formulaires disparaissaient, ne laissant apparaître que
                 le background :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img3.2.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img3.2.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 J’ai donc créé une fonction permettant de vérifier si un formulaire est bel et bien rempli :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img3.3.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img3.3.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Après modification, voilà ce que nous obtenons en validant un formulaire vide :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img3.4.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img3.4.png" alt="liste de tickets">
               </div>
 
             </div>
@@ -271,7 +271,7 @@
               <h3 class="mb-5">Optimisation du référencement (SEO)</h3>
             </div>
             <div>
-              <p class="mb-5">
+              <p class="mb-5" class="mb-5">
                 Lors de mon stage, j’ai également été chargée d’optimiser le référencement du site internet. Pour ce
                 faire, j’ai utilisé une extension Google qu’un des alternants de l’entreprise m’avait conseillée :
                 Lighthouse SEO. Cette extension permet de répertorier tous les problèmes impactant le référencement,
@@ -280,23 +280,23 @@
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img4.1.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img4.1.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 L’extension permet également de voir les performances du site au moment du diagnostic et propose
                 également des solutions pour améliorer le score du site internet en fonction des catégories :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img4.2.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img4.2.png" alt="liste de tickets">
               </div>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img4.3.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img4.3.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Pour améliorer le référencement, j’ai donc appliqué les recommandations de l’extension, et plus
                 particulièrement au niveau des formulaires. En effet, ces derniers étaient dénués de labels. Pour des
                 raisons d’accessibilité, j’ai dû les ajouter dans les différents composants des formulaires du site
@@ -313,20 +313,20 @@
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img4.4.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img4.4.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Ce composant contient toutes les possibilités de style et de comportement utilisé sur le site internet.
                 Lorsque ce composant doit apparaitre sur une des pages du site, il faut qu’on l’importe dans la partie
                 script comme ceci :
               </p>
 
               <div class="image-box">
-                <img loading="lazy" class="img-fluid" src="images/missions/img4.5.png" alt="liste de tickets">
+                <img loading="lazy" class="img-fluid mb-5" src="images/missions/img4.5.png" alt="liste de tickets">
               </div>
 
-              <p>
+              <p class="mb-5">
                 Nous avons importé deux composants pour créer notre formulaire de connexion. Nous voyons donc que parmi
                 les caractéristiques du composant, le label a été ajouté. J’ai donc effectué cette opération sur tous
                 les composants utilisés pour les formulaires.
@@ -338,7 +338,7 @@
               <h3 class="mb-5">Intégration de la maquette du site internet</h3>
             </div>
 
-            <p>
+            <p class="mb-5">
               Ma dernière mission a été l’intégration de la maquette sur le site internet. Je devais intégrer l’onglet «
               Mes informations » qui est la fusion des deux anciens onglets « Informations publiques » et « Informations
               privées ». Voici la maquette de la page à réaliser créée sur le logiciel Figma par le webdesigner de
@@ -346,10 +346,10 @@
             </p>
 
             <div class="image-box">
-              <img loading="lazy" class="img-fluid" src="images/missions/img5.1.png" alt="liste de tickets">
+              <img loading="lazy" class="img-fluid mb-5" src="images/missions/img5.1.png" alt="liste de tickets">
             </div>
 
-            <p>
+            <p class="mb-5">
               Le header et le menu à gauche étant des composants à part, je devais m’occuper seulement du contenu de la
               page. Après une semaine de travail, je n’ai pas eu le temps d’intégrer complètement la page, certains
               composants étant beaucoup trop important en termes de travail pour que je puisse terminer. Cette page est
@@ -358,10 +358,10 @@
             </p>
 
             <div class="image-box">
-              <img loading="lazy" class="img-fluid" src="images/missions/img5.2.png" alt="liste de tickets">
+              <img loading="lazy" class="img-fluid mb-5" src="images/missions/img5.2.png" alt="liste de tickets">
             </div>
 
-            <p>
+            <p class="mb-5">
               Tout comme l’ajout des labels dans la mission précédente, cette refonte graphique se fait principalement
               par la modification des composants. Mais contrairement à l’amélioration de l’accessibilité avec l’ajout
               des labels dans les comportements du composant, j’ai uniquement modifié le visuel de ces derniers, en ne
@@ -371,15 +371,15 @@
             </p>
 
             <div class="image-box">
-              <img loading="lazy" class="img-fluid" src="images/missions/img5.3.png" alt="liste de tickets">
+              <img loading="lazy" class="img-fluid mb-5" src="images/missions/img5.3.png" alt="liste de tickets">
             </div>
 
-            <p>
+            <p class="mb-5">
               Voici donc à quoi ressemble la page concernée après modifications :
             </p>
 
             <div class="image-box mb-5">
-              <img loading="lazy" class="img-fluid" src="images/missions/img5.4.png" alt="liste de tickets">
+              <img loading="lazy" class="img-fluid mb-5" src="images/missions/img5.4.png" alt="liste de tickets">
             </div>
 
             <div class="link-btn">
