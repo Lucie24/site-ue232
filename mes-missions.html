@@ -104,7 +104,8 @@
               <h3 class="mb-5">Gestions des tickets/Résolution de divers problèmes du site existant</h3>
             </div>
             <div>
-              <p class="mb-5">Cette partie traitera des divers problèmes rencontrés sur la gestion du formulaire d’inscription et de
+              <p class="mb-5">Cette partie traitera des <span class="bold">divers problèmes rencontrés</span> sur la
+                gestion du formulaire d’inscription et de
                 connexion. Voici un aperçu des formulaires actuellement (après refonte graphique) :</p>
 
               <div class="image-box">
@@ -119,12 +120,8 @@
 
               <p class="text-center mb-5">Le formulaire d'inscription</p>
 
-              <p class="mb-5">Au cours de mon stage, l’entreprise a créé un nouveau dépôt git afin de ne plus avoir de dépendances
-                avec un ancien développeur. Pour les différentes tâches réalisées que je vais aborder tout au long de ce
-                rapport, je parlerai donc d’un dépôt obsolète et je vous expliquerai les différents changements
-                qu’apporte la création de ce nouveau dépôt.
-                <br>Comme nous l’avons vu plus tôt en exemple pour l’explication de la gestion des tickets, le
-                formulaire comportait 3 erreurs principales.
+              <p class="mb-5">Comme nous l’avons vu plus tôt en exemple pour l’explication de la gestion des tickets, le
+                formulaire comportait <span class="bold">3 erreurs principales</span>.
               </p>
 
               <div class="section-title text-center">
@@ -132,37 +129,44 @@
                   différents</h4>
               </div>
 
-              <p class="mb-5">Le premier problème auquel je devais faire face est un problème de pop-up. Voici son ticket :</p>
+              <p class="mb-5">Le premier problème auquel je devais faire face est un <span class="bold">problème de
+                  pop-up</span>. Voici son ticket :</p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.1.png" alt="liste de tickets">
               </div>
 
-              <p class="mb-5">Comme l’indique son ticket, lors de l’inscription, si les deux mots de passes entrés étaient
-                différents, une page de chargement ainsi que deux pop-up apparaissaient :</p>
+              <p class="mb-5">Comme l’indique son ticket, lors de l’inscription, si les <span class="bold">deux mots de
+                  passes</span> entrés étaient
+                <span class="bold">différents</span>, une page de chargement ainsi que deux pop-up apparaissaient :
+              </p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.2.png" alt="liste de tickets">
               </div>
 
-              <p class="mb-5">J’ai résolu ce problème en sortant d’une condition une fonction permettant de comparer les deux mots de
-                passes enregistrés par l’utilisateur. Les morceaux de codes en vert sont les changements effectués et
-                les morceaux de codes en rouge correspondent au code avant les modifications :
+              <p class="mb-5">J’ai résolu ce problème en sortant d’une condition une fonction permettant de <span
+                  class="bold">comparer les deux mots de
+                  passes</span> enregistrés par l’utilisateur. Les extraits de codes en vert sont les <span
+                  class="bold">changements effectués</span> et
+                les extraits de codes en rouge correspondent au code <span class="bold">avant les modifications</span> :
               </p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.3.png" alt="liste de tickets">
               </div>
 
-              <p class="mb-5">Après changement, lorsque les deux mots de passes entrés sont différents, voici ce qui apparait :</p>
+              <p class="mb-5">Après changement, lorsque les deux mots de passes entrés sont différents, voici ce qui
+                apparait :</p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid mb-5" src="images/missions/img1.4.png" alt="liste de tickets">
               </div>
 
               <p class="mb-5">
-                Nous voyons que grâce aux modifications, plus aucune page de chargement n’apparait et la pop-up verte
-                indiquant que le compte a bien été créé a disparu.
+                Nous voyons que grâce aux modifications, <span class="bold">plus aucune page de chargement
+                  n’apparait</span> et la pop-up verte
+                indiquant que le compte a bien été créé a <span class="bold">disparu</span>.
               </p>
 
               <div class="section-title text-center">
@@ -178,7 +182,8 @@
               </div>
 
               <p class="mb-5">
-                Comme indiqué dans le ticket, la conformité des adresses mail n’est pas vérifiée lorsqu’un formulaire
+                Comme indiqué dans le ticket, la <span class="bold">conformité des adresses mail </span>n’est pas
+                vérifiée lorsqu’un formulaire
                 est rempli. Dans le cas de notre ticket ce problème a été relevé pour le formulaire de récupération de
                 mot de passe mais c’est aussi le cas pour les formulaires d’inscription et de connexion. Voici à quoi
                 ressemble le formulaire de récupération de mot de passe (après refonte graphique) :
@@ -190,8 +195,10 @@
 
               <p class="mb-5">
                 Avant mon intervention, il était possible d’envoyer un mail de récupération en entrant une adresse mail
-                non conforme, c’est-à-dire une adresse mail ne ressemblant pas à exemple@gmail.com. Ainsi, on pouvait
-                entrer comme mail exemple@gmail, exemple ou encore ne rien renseigner du tout. Voici un exemple d’envoi
+                <span class="bold">non conforme</span>, c’est-à-dire une adresse mail ne ressemblant pas à
+                exemple@gmail.com. Ainsi, on pouvait
+                entrer comme mail exemple@gmail, exemple ou encore ne <span class="bold">rien renseigner</span> du tout.
+                Voici un exemple d’envoi
                 de mail de récupération à un mail invalide :
               </p>
 
@@ -200,8 +207,9 @@
               </div>
 
               <p class="mb-5">
-                Afin de résoudre ce problème, j’ai créé une fonction permettant de tester la conformité d’une adresse
-                mail grâce à une formule spéciale :
+                Afin de résoudre ce problème, j’ai créé une <span class="bold">fonction</span> permettant de tester la
+                <span class="bold">conformité d’une adresse
+                  mail</span> grâce à une formule particulière :
               </p>
 
               <div class="image-box">
@@ -209,7 +217,8 @@
               </div>
 
               <p class="mb-5">
-                J’ai ensuite trouvé une formule plus courte et plus simple à la compréhension pour la vérification de
+                J’ai ensuite trouvé une formule <span class="bold">plus courte</span> et <span class="bold">plus simple
+                  à la compréhension</span> pour la vérification de
                 l’adresse mail :
               </p>
 
@@ -218,14 +227,17 @@
               </div>
 
               <p class="mb-5">
-                Maintenant, lorsque l’adresse mail entrée n’est pas conforme, le message d’erreur suivant apparait :
+                Maintenant, lorsque l’adresse mail entrée <span class="bold">n’est pas conforme</span>, le message
+                d’erreur suivant apparait :
               </p>
 
               <div class="image-box">
                 <img loading="lazy" class="img-fluid mb-5" src="images/missions/img2.6.png" alt="liste de tickets">
               </div>
 
-              <p class="mb-5">Grâce à cette nouvelle fonction, la conformité de l’adresse mail est bel et bien vérifiée.</p>
+              <p class="mb-5">Grâce à cette nouvelle fonction, la conformité de l’adresse mail est <span
+                  class="bold">bel et bien vérifiée</span>.
+              </p>
 
               <div class="section-title text-center">
                 <h4 class="mb-5">La disparition des formulaires</h4>
@@ -240,7 +252,8 @@
               </div>
 
               <p class="mb-5">
-                Lorsqu’aucun des champs n’étaient validés, les formulaires disparaissaient, ne laissant apparaître que
+                Lorsqu’<span class="bold">aucun des champs</span> n’étaient validés, les formulaires <span
+                  class="bold">disparaissaient</span>, ne laissant apparaître que
                 le background :
               </p>
 
@@ -249,7 +262,8 @@
               </div>
 
               <p class="mb-5">
-                J’ai donc créé une fonction permettant de vérifier si un formulaire est bel et bien rempli :
+                J’ai donc créé une <span class="bold">fonction</span> permettant de vérifier si un formulaire est bel et
+                bien rempli :
               </p>
 
               <div class="image-box">
@@ -272,10 +286,14 @@
             </div>
             <div>
               <p class="mb-5" class="mb-5">
-                Lors de mon stage, j’ai également été chargée d’optimiser le référencement du site internet. Pour ce
-                faire, j’ai utilisé une extension Google qu’un des alternants de l’entreprise m’avait conseillée :
-                Lighthouse SEO. Cette extension permet de répertorier tous les problèmes impactant le référencement,
-                l’accessibilité mais aussi les performances. Voici à quoi ressemble un diagnostic de l’extension sur la
+                Lors de mon stage, j’ai également été chargée <span class="bold">d’optimiser le référencement</span> du
+                site internet. Pour ce
+                faire, j’ai utilisé une <span class="bold">extension Google</span> qu’un des alternants de l’entreprise
+                m’avait conseillée :
+                <span class="bold">Lighthouse SEO</span>. Cette extension permet de répertorier tous les problèmes <span
+                  class="bold">impactant le référencement</span>,
+                <span class="bold">l’accessibilité</span> mais aussi les <span class="bold">performances</span>. Voici à
+                quoi ressemble un diagnostic de l’extension sur la
                 page d’accueil :
               </p>
 
@@ -284,8 +302,10 @@
               </div>
 
               <p class="mb-5">
-                L’extension permet également de voir les performances du site au moment du diagnostic et propose
-                également des solutions pour améliorer le score du site internet en fonction des catégories :
+                L’extension permet également de voir les performances du site <span class="bold">au moment du
+                  diagnostic</span> et propose
+                également des solutions pour <span class="bold">améliorer le score</span> du site internet en fonction
+                des catégories :
               </p>
 
               <div class="image-box">
@@ -297,18 +317,27 @@
               </div>
 
               <p class="mb-5">
-                Pour améliorer le référencement, j’ai donc appliqué les recommandations de l’extension, et plus
-                particulièrement au niveau des formulaires. En effet, ces derniers étaient dénués de labels. Pour des
-                raisons d’accessibilité, j’ai dû les ajouter dans les différents composants des formulaires du site
+                Pour améliorer le référencement, j’ai donc appliqué les <span class="bold">recommandations de
+                  l’extension</span>, et plus
+                particulièrement au niveau des <span class="bold">formulaires</span>. En effet, ces derniers étaient
+                <span class="bold">dénués de labels</span>. Pour des
+                raisons d’accessibilité, j’ai dû les ajouter dans les différents <span class="bold">composants</span>
+                des formulaires du site
                 internet. Tout d’abord, je vais vous expliquer grâce à des extraits de code comment fonctionne un
-                composant et comment lui transmettre des variables afin d’en changer le comportement.
+                <span class="bold">composant</span> et comment lui <span class="bold">transmettre des variables</span>
+                afin d’en changer le comportement.
 
-                <br>Prenons pour exemple le formulaire de connexion. Ce dernier est composé de trois composants : deux «
-                FieldInput » servant à entrer du texte brut et un bouton de validation. Nous nous intéresserons donc aux
+                <br>Prenons pour exemple le formulaire de connexion. Ce dernier est composé de <span class="bold">trois
+                  composants</span> : deux «
+                <span class="bold">FieldInput</span> » servant à entrer du texte brut et un <span class="bold">bouton de
+                  validation</span>. Nous nous intéresserons donc aux
                 composants « FieldInput » auxquels nous devons transmettre un label. Le composant « FieldInput » est
-                constitué d’une balise « div » entourant une balise « input ». Les caractéristiques utilisés dans la
-                balise « div » sont des classes CSS prédéfinies. La balise div contient donc le visuel de l’input. La
-                balise « input » quant à elle contient le comportement de l’input au sein d’une page (événements, taille
+                constitué d’une balise « <span class="bold">div</span> » entourant une balise « <span
+                  class="bold">input</span> ». Les caractéristiques utilisés dans la
+                balise « div » sont des <span class="bold">classes CSS définies</span> au préalable. La balise div
+                contient donc le <span class="bold">visuel de l’input</span>. La
+                balise « input » quant à elle contient le <span class="bold">comportement de l’input</span> au sein
+                d’une page (événements, taille
                 maximum, type…).
               </p>
 
@@ -317,7 +346,8 @@
               </div>
 
               <p class="mb-5">
-                Ce composant contient toutes les possibilités de style et de comportement utilisé sur le site internet.
+                Ce composant contient toutes les possibilités de <span class="bold">style</span> et de <span
+                  class="bold">comportement</span> utilisé sur le site internet.
                 Lorsque ce composant doit apparaitre sur une des pages du site, il faut qu’on l’importe dans la partie
                 script comme ceci :
               </p>
@@ -328,8 +358,9 @@
 
               <p class="mb-5">
                 Nous avons importé deux composants pour créer notre formulaire de connexion. Nous voyons donc que parmi
-                les caractéristiques du composant, le label a été ajouté. J’ai donc effectué cette opération sur tous
-                les composants utilisés pour les formulaires.
+                les caractéristiques du composant, le <span class="bold">label</span> a été ajouté. J’ai donc effectué
+                cette opération sur <span class="bold">tous
+                  les composants</span> utilisés pour les formulaires.
               </p>
             </div>
           </div>
@@ -339,9 +370,12 @@
             </div>
 
             <p class="mb-5">
-              Ma dernière mission a été l’intégration de la maquette sur le site internet. Je devais intégrer l’onglet «
-              Mes informations » qui est la fusion des deux anciens onglets « Informations publiques » et « Informations
-              privées ». Voici la maquette de la page à réaliser créée sur le logiciel Figma par le webdesigner de
+              Ma dernière mission a été <span class="bold">l’intégration de la maquette</span> sur le site internet. Je
+              devais intégrer l’onglet «
+              <span class="bold">Mes informations</span> » qui est la fusion des deux anciens onglets « <span
+                class="bold">Informations publiques</span> » et « <span class="bold">Informations
+                privées</span> ». Voici la maquette de la page à réaliser créée sur le logiciel Figma par le webdesigner
+              de
               l’entreprise :
             </p>
 
@@ -350,8 +384,10 @@
             </div>
 
             <p class="mb-5">
-              Le header et le menu à gauche étant des composants à part, je devais m’occuper seulement du contenu de la
-              page. Après une semaine de travail, je n’ai pas eu le temps d’intégrer complètement la page, certains
+              Le header et le menu à gauche étant des <span class="bold">composants à part</span>, je devais m’occuper
+              seulement du <span class="bold">contenu de la
+                page</span>. Après une semaine de travail, je n’ai pas eu le temps d’intégrer complètement la page,
+              certains
               composants étant beaucoup trop important en termes de travail pour que je puisse terminer. Cette page est
               donc toujours en travaux à l’heure actuelle et sera terminée plus tard par les développeurs de
               l’entreprise. Voici à quoi ressemble la page avant les modifications :
@@ -363,10 +399,14 @@
 
             <p class="mb-5">
               Tout comme l’ajout des labels dans la mission précédente, cette refonte graphique se fait principalement
-              par la modification des composants. Mais contrairement à l’amélioration de l’accessibilité avec l’ajout
-              des labels dans les comportements du composant, j’ai uniquement modifié le visuel de ces derniers, en ne
-              travaillant que sur le CSS. A cette fin, Mr BOISHUS (le webdesigner) a créé sur Figma une page regroupant
-              tous les nouveaux visuels des composants ainsi que les éventuels événements liés à ces derniers. Je
+              par la <span class="bold">modification des composants</span>. Mais contrairement à l’amélioration de
+              l’accessibilité avec l’ajout
+              des labels dans les comportements du composant, j’ai uniquement modifié le <span
+                class="bold">visuel</span> de ces derniers, en ne
+              travaillant que sur le <span class="bold">CSS</span>. A cette fin, Mr BOISHUS (le webdesigner) a créé sur
+              Figma une page regroupant
+              <span class="bold">tous les nouveaux visuels des composants</span> ainsi que les éventuels <span
+                class="bold">événements</span> liés à ces derniers. Je
               pouvais donc retrouver les propriétés CSS en prenant pour exemple cette fiche :
             </p>
 
